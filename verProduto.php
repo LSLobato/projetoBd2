@@ -18,7 +18,7 @@ $registros = 2;
 $inicio = ($registros * $pagina);
 
 #conta o total de itens
-$resultTotal = mysqli_query($conexao, "SELECT count(id) FROM produto where usuario =" . $_SESSION['id']);
+$resultTotal = mysqli_query($conexao, "SELECT count(id) FROM produto where usuario_id =" . $_SESSION['id']);
 $row = mysqli_fetch_all($resultTotal);
 
 #seleciona os itens por página
